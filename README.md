@@ -2,12 +2,12 @@
 
 # Hello World!, I'm Joaquín, a Spanish Blue Team Cybersecurity Student 👋🏻:
 
-📍 currently based in Puerto de Sagunto, Spain  
-🎓 studying Computer Engineering at Universitat Politècnica de València (UPV)  
-🛡️ passionate about Blue Team cybersecurity (defensive security)  
-🧠 currently learning about SIEM, threat detection, and incident response  
-🛠️ building tools in Python to analyze Indicators of Compromise (IoCs) and suspicious logs  
-📂 check out my featured projects: **ThreatKit** and **LogSentinel**
+📍 Currently based in Puerto de Sagunto, Spain  
+🎓 Studying Computer Engineering at Universitat Politècnica de València (UPV)  
+🛡️ Passionate about Blue Team cybersecurity (defensive security)  
+🧠 Currently learning about SIEM, threat detection, and incident response  
+🛠️ Building tools in Python to analyze Indicators of Compromise (IoCs) and suspicious logs  
+📂 Check out my featured projects: **ThreatKit** and **LogSentinel**
 
 ---
 
