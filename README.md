@@ -27,13 +27,6 @@
 ![JavaFX](https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=java&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
-
-# 💬 Languages:
-**Español:** Nativo  
-**English:** C1 (Certified by Cambridge)
-
----
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Joaco1908/Joaco1908/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Joaco1908/Joaco1908/output/github-snake.svg" />
