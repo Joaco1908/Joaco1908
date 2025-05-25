@@ -27,24 +27,6 @@
 ![JavaFX](https://img.shields.io/badge/JavaFX-007396?style=for-the-badge&logo=java&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
----
-
-# 🎓 Certifications:
-- **LetsDefend – SOC Analyst Learning Path** (May 2025)  
-- **Cambridge University – C1 Advanced** (191/210, June 2024)  
-- **Security Blue Team – Blue Team Junior Analyst** (May 2025)  
-- **IBM – Cybersecurity Fundamentals** (May 2025)  
-
----
-
-# 🚀 Highlight Projects:
-### 🛠️ ThreatKit — Modular IoC Analysis Toolkit (Collaborative)
-A Python toolkit for scanning directories and analyzing Indicators of Compromise (IPs, hashes, filenames, suspicious emails, etc.) using regex, API lookups, and file matching.
-
-### 🔍 LogSentinel — Suspicious Log Analyzer (Individual)
-Detects unauthorized access attempts, brute-force patterns, and anomalies in log files (auth.log, access.log, etc.) using Python and regex. Generates reports for learning defensive security.
-
----
 
 # 💬 Languages:
 **Español:** Nativo  
