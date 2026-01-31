@@ -1,10 +1,10 @@
 name: GitHub Snake Game
 
 on:
-  # Schedule the workflow to run daily at midnight UTC
+  # Schedule the workflow to run daily at midnight UTC to keep contributions current
   schedule:
     - cron: "0 0 * * *"
-  # Allow manual triggering of the workflow
+  # Allow manual triggering of the workflow to update on demand
   workflow_dispatch:
   # Trigger the workflow on pushes to the main branch
   push:
@@ -18,25 +18,36 @@ jobs:
       # Step 1: Checkout the repository
       - name: Checkout Repository
         uses: actions/checkout@v3
-      # Step 2: Generate the snake animations
+      
+      # Step 2: Generate 2026-specific contribution grid
+      # This custom script fetches ONLY 2026 contribution data
+      - name: Generate 2026 Contribution Grid
+        run: node .github/scripts/generate-2026-contributions.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+      
+      # Step 3: Generate the standard snake animations (last 365 days)
+      # NOTE: This action fetches contributions from the last 365 days by default.
+      # As of January 2026, this includes contributions from ~February 2025 through January 2026.
+      # The Platane/snk action does not currently support filtering by specific years.
+      # As 2026 progresses, this will automatically show more 2026 contribution data.
       - name: Generate GitHub Contributions Snake Animations
         uses: Platane/snk@v3
         with:
-          # GitHub username to generate the animation for
           github_user_name: ${{ github.repository_owner }}
-          # Define the output files and their configurations
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # Step 3: Deploy the generated files to the 'output' branch
+      
+      # Step 4: Deploy the generated files to the 'output' branch
       - name: Deploy to Output Branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: output
-          # Optionally, you can set a custom commit message
           commit_message: "Update snake animation [skip ci]"
