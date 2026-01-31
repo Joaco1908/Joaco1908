@@ -23,6 +23,12 @@
 ![Git](https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+## 📊 Contribution Graphs
+
+### 2026 Contributions
+![2026 Contributions](https://raw.githubusercontent.com/Joaco1908/Joaco1908/output/github-contributions-2026.svg)
+
+### All-Time Snake Animation
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Joaco1908/Joaco1908/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Joaco1908/Joaco1908/output/github-snake.svg" />
